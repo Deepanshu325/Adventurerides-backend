@@ -78,7 +78,7 @@ Phone / WhatsApp: +91 96675 74757
 Skype: phigel
 Instagram: https://www.instagram.com/adventurerides.travel/
 Facebook: https://www.facebook.com/people/Adventure-Rides/100064155602022/
-YouTube: https://www.youtube.com/channel/UCOeEWtVilE8o1VIGfrDXKZA`,
+YouTube: https://www.youtube.com/channel/UCOeEWtVilE8o1VIGfrDXKZA/`,
   };
 
   transporter.sendMail(mailOptions, (error, info) => {
