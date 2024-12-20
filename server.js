@@ -146,7 +146,7 @@ YouTube: https://www.youtube.com/channel/UCOeEWtVilE8o1VIGfrDXKZA/`,
       res.status(200).json({ message: "Download email sent successfully." });
     }
   });
-};
+});
 
 // Start Server
 const PORT = process.env.PORT || 10000;
