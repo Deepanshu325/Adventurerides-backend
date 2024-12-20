@@ -136,6 +136,14 @@ Skype: phigel
 Instagram: https://www.instagram.com/adventurerides.travel/
 Facebook: https://www.facebook.com/people/Adventure-Rides/100064155602022/
 YouTube: https://www.youtube.com/channel/UCOeEWtVilE8o1VIGfrDXKZA/`,
+
+attachments: [
+  {
+    filename: "Adventure_Details.pdf", // Name of the file in the email
+    path: "Files/PPAR - sm The Highest Ride 4D - EN - 20240501.pdf", // Path to the file
+  },
+],
+
   }; 
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
