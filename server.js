@@ -47,8 +47,8 @@ Current Bike(s): ${currentBike}`,
   });
 });
 
-// New API Endpoint for sending a download message
-app.post("/send-download-email", (req, res) => {
+// New API Endpoint for sending a download message for Himalaya 4 days
+app.post("/send-download-email-him4days", (req, res) => {
   const { email, name } = req.body;
 
   if (!email || !name) {
@@ -79,8 +79,14 @@ Skype: phigel
 Instagram: https://www.instagram.com/adventurerides.travel/
 Facebook: https://www.facebook.com/people/Adventure-Rides/100064155602022/
 YouTube: https://www.youtube.com/channel/UCOeEWtVilE8o1VIGfrDXKZA/`,
-  };
 
+attachments: [
+  {
+    filename: "Adventure_Details.pdf", // Name of the file in the email
+    path: "Files/PPAR - sm The Highest Ride 4D - EN - 20240501.pdf", // Path to the file
+  },
+],
+  }; 
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
       console.error("Error sending email:", error.message);
@@ -91,6 +97,187 @@ YouTube: https://www.youtube.com/channel/UCOeEWtVilE8o1VIGfrDXKZA/`,
     }
   });
 });
+
+
+
+
+
+
+
+// New API Endpoint for sending a download message for Himalaya 10 days
+app.post("/send-download-email-him10days", (req, res) => {
+  const { email, name } = req.body;
+
+  if (!email || !name) {
+    return res.status(400).json({ error: "Email and name are required." });
+  }
+
+  const mailOptions = {
+    from: "deepanshushrivastav40@gmail.com",
+    to: email,
+    subject: "Adventure Rides",
+    text: `Dear ${name},
+
+From the very start of the booking process, we at Adventure Rides, do everything we can at our end to make sure that each and every adventurer has all the information and support they need to get to the start of the ride fully prepared and stress-free.
+
+Here is the detailed program of your next adventure including a daily wise description of your discoveries and all in-
+/exclusions.
+
+Don’t be afraid to ask us any questions. If you want to pick our brains over the phone, leave us a contact number, and one of the adventure leaders will get back to you as soon as we can.
+
+Many thanks,
+
+The Adventure Rides Support Team
+
+PP Adventure Rides Private Limited
+Address: DE 153, Block DE, Tagore Garden, New Delhi, Delhi 110027
+Phone / WhatsApp: +91 96675 74757
+Skype: phigel
+Instagram: https://www.instagram.com/adventurerides.travel/
+Facebook: https://www.facebook.com/people/Adventure-Rides/100064155602022/
+YouTube: https://www.youtube.com/channel/UCOeEWtVilE8o1VIGfrDXKZA/`,
+
+attachments: [
+  {
+    filename: "Adventure_Details.pdf", // Name of the file in the email
+    path: "Files/PPAR - sm The HighestRide 10D - EN - 2024-2025.pdf", // Path to the file
+  },
+],
+  }; 
+  transporter.sendMail(mailOptions, (error, info) => {
+    if (error) {
+      console.error("Error sending email:", error.message);
+      res.status(500).json({ error: "Email failed to send." });
+    } else {
+      console.log("Email sent:", info.response);
+      res.status(200).json({ message: "Download email sent successfully." });
+    }
+  });
+});
+
+
+
+
+
+// New API Endpoint for sending a download message for RAJASTHAN 10 days
+app.post("/send-download-email-raj10days", (req, res) => {
+  const { email, name } = req.body;
+
+  if (!email || !name) {
+    return res.status(400).json({ error: "Email and name are required." });
+  }
+
+  const mailOptions = {
+    from: "deepanshushrivastav40@gmail.com",
+    to: email,
+    subject: "Adventure Rides",
+    text: `Dear ${name},
+
+From the very start of the booking process, we at Adventure Rides, do everything we can at our end to make sure that each and every adventurer has all the information and support they need to get to the start of the ride fully prepared and stress-free.
+
+Here is the detailed program of your next adventure including a daily wise description of your discoveries and all in-
+/exclusions.
+
+Don’t be afraid to ask us any questions. If you want to pick our brains over the phone, leave us a contact number, and one of the adventure leaders will get back to you as soon as we can.
+
+Many thanks,
+
+The Adventure Rides Support Team
+
+PP Adventure Rides Private Limited
+Address: DE 153, Block DE, Tagore Garden, New Delhi, Delhi 110027
+Phone / WhatsApp: +91 96675 74757
+Skype: phigel
+Instagram: https://www.instagram.com/adventurerides.travel/
+Facebook: https://www.facebook.com/people/Adventure-Rides/100064155602022/
+YouTube: https://www.youtube.com/channel/UCOeEWtVilE8o1VIGfrDXKZA/`,
+
+attachments: [
+  {
+    filename: "Adventure_Details.pdf", // Name of the file in the email
+    path: "Files/PPAR - sm RAJ ESS 10D  - ENG - 2024 - 2025.pdf", // Path to the file
+  },
+],
+  }; 
+  transporter.sendMail(mailOptions, (error, info) => {
+    if (error) {
+      console.error("Error sending email:", error.message);
+      res.status(500).json({ error: "Email failed to send." });
+    } else {
+      console.log("Email sent:", info.response);
+      res.status(200).json({ message: "Download email sent successfully." });
+    }
+  });
+});
+
+
+
+
+
+
+
+
+// New API Endpoint for sending a download message for RAJASTHAN 10 days VIP
+app.post("/send-download-email-raj10daysvip", (req, res) => {
+  const { email, name } = req.body;
+
+  if (!email || !name) {
+    return res.status(400).json({ error: "Email and name are required." });
+  }
+
+  const mailOptions = {
+    from: "deepanshushrivastav40@gmail.com",
+    to: email,
+    subject: "Adventure Rides",
+    text: `Dear ${name},
+
+From the very start of the booking process, we at Adventure Rides, do everything we can at our end to make sure that each and every adventurer has all the information and support they need to get to the start of the ride fully prepared and stress-free.
+
+Here is the detailed program of your next adventure including a daily wise description of your discoveries and all in-
+/exclusions.
+
+Don’t be afraid to ask us any questions. If you want to pick our brains over the phone, leave us a contact number, and one of the adventure leaders will get back to you as soon as we can.
+
+Many thanks,
+
+The Adventure Rides Support Team
+
+PP Adventure Rides Private Limited
+Address: DE 153, Block DE, Tagore Garden, New Delhi, Delhi 110027
+Phone / WhatsApp: +91 96675 74757
+Skype: phigel
+Instagram: https://www.instagram.com/adventurerides.travel/
+Facebook: https://www.facebook.com/people/Adventure-Rides/100064155602022/
+YouTube: https://www.youtube.com/channel/UCOeEWtVilE8o1VIGfrDXKZA/`,
+
+attachments: [
+  {
+    filename: "Adventure_Details.pdf", // Name of the file in the email
+    path: "Files/PPAR - sm RAJ ESS VIP10D  - ENG - 2024 - 2025.pdf", // Path to the file
+  },
+],
+  }; 
+  transporter.sendMail(mailOptions, (error, info) => {
+    if (error) {
+      console.error("Error sending email:", error.message);
+      res.status(500).json({ error: "Email failed to send." });
+    } else {
+      console.log("Email sent:", info.response);
+      res.status(200).json({ message: "Download email sent successfully." });
+    }
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
 
 // Start Server
 const PORT = process.env.PORT || 10000;
