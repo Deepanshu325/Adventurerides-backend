@@ -272,6 +272,127 @@ attachments: [
 
 
 
+// New API Endpoint for sending a download message for himalaya 10 days french 
+app.post("/send-download-email-him10daysfr", (req, res) => {
+  const { email, name } = req.body;
+
+  if (!email || !name) {
+    return res.status(400).json({ error: "Email and name are required." });
+  }
+
+  const mailOptions = {
+    from: "deepanshushrivastav40@gmail.com",
+    to: email,
+    subject: "Adventure Rides",
+    text: `Cher ${name},
+
+Dès le début du processus de réservation, chez Adventure Rides, on fait tout ce qui est
+possible pour s'assurer que chaque aventurier dispose de toutes les informations et
+du soutien dont il a besoin pour arriver au départ de la randonnée parfaitement
+préparé et sans stress.
+
+Voici le programme détaillé de votre prochaine aventure, y compris une présentation
+quotidienne de vos découvertes ainsi que de toutes les inclusions et exclusions.
+
+
+N'hésitez pas à nous poser toutes questions qui vous viennent à l'esprit. Si vous
+souhaitez être contacté(s) par téléphone, laissez-nous un numéro et donnez-nous un
+moment qui vous convient pour vous appeler.
+
+Merci et à bientôt,
+
+L'équipe de spécialistes d'Adventure Rides
+
+
+PP Adventure Rides Private Limited
+Address: DE 153, Block DE, Tagore Garden, New Delhi, Delhi 110027
+Phone / WhatsApp: +91 96675 74757
+Skype: phigel
+Instagram: https://www.instagram.com/adventurerides.travel/
+Facebook: https://www.facebook.com/people/Adventure-Rides/100064155602022/
+YouTube: https://www.youtube.com/channel/UCOeEWtVilE8o1VIGfrDXKZA/`,
+
+attachments: [
+  {
+    filename: "Adventure_Details.pdf", // Name of the file in the email
+    path: "Files/PPAR - smThe HighestRide 10 - FR - 2024-2025.pdf", // Path to the file
+  },
+],
+
+  }; 
+  transporter.sendMail(mailOptions, (error, info) => {
+    if (error) {
+      console.error("Error sending email:", error.message);
+      res.status(500).json({ error: "Email failed to send." });
+    } else {
+      console.log("Email sent:", info.response);
+      res.status(200).json({ message: "Download email sent successfully." });
+    }
+  });
+});
+
+
+
+
+
+// New API Endpoint for sending a download message for himalaya 10 days french 
+app.post("/send-download-email-raj10daysvipfr", (req, res) => {
+  const { email, name } = req.body;
+
+  if (!email || !name) {
+    return res.status(400).json({ error: "Email and name are required." });
+  }
+
+  const mailOptions = {
+    from: "deepanshushrivastav40@gmail.com",
+    to: email,
+    subject: "Adventure Rides",
+    text: `Cher ${name},
+
+Dès le début du processus de réservation, chez Adventure Rides, on fait tout ce qui est
+possible pour s'assurer que chaque aventurier dispose de toutes les informations et
+du soutien dont il a besoin pour arriver au départ de la randonnée parfaitement
+préparé et sans stress.
+
+Voici le programme détaillé de votre prochaine aventure, y compris une présentation
+quotidienne de vos découvertes ainsi que de toutes les inclusions et exclusions.
+
+
+N'hésitez pas à nous poser toutes questions qui vous viennent à l'esprit. Si vous
+souhaitez être contacté(s) par téléphone, laissez-nous un numéro et donnez-nous un
+moment qui vous convient pour vous appeler.
+
+Merci et à bientôt,
+
+L'équipe de spécialistes d'Adventure Rides
+
+
+PP Adventure Rides Private Limited
+Address: DE 153, Block DE, Tagore Garden, New Delhi, Delhi 110027
+Phone / WhatsApp: +91 96675 74757
+Skype: phigel
+Instagram: https://www.instagram.com/adventurerides.travel/
+Facebook: https://www.facebook.com/people/Adventure-Rides/100064155602022/
+YouTube: https://www.youtube.com/channel/UCOeEWtVilE8o1VIGfrDXKZA/`,
+
+attachments: [
+  {
+    filename: "Adventure_Details.pdf", // Name of the file in the email
+    path: "Files/PPAR - sm RAJ ESS VIP10D  - FR - 2024 - 2025.pdf", // Path to the file
+  },
+],
+
+  }; 
+  transporter.sendMail(mailOptions, (error, info) => {
+    if (error) {
+      console.error("Error sending email:", error.message);
+      res.status(500).json({ error: "Email failed to send." });
+    } else {
+      console.log("Email sent:", info.response);
+      res.status(200).json({ message: "Download email sent successfully." });
+    }
+  });
+});
 
 
 // Start Server
