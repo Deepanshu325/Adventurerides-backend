@@ -83,7 +83,7 @@ YouTube: https://www.youtube.com/channel/UCOeEWtVilE8o1VIGfrDXKZA/`,
 
 attachments: [
   {
-    filename: "Adventure_Details.pdf", // Name of the file in the email
+    filename: "PPAR - sm The Highest Ride 4D - EN - 20240501.pdf", // Name of the file in the email
     path: "Files/PPAR - sm The Highest Ride 4D - EN - 20240501.pdf", // Path to the file
   },
 ],
@@ -140,7 +140,7 @@ YouTube: https://www.youtube.com/channel/UCOeEWtVilE8o1VIGfrDXKZA/`,
 
 attachments: [
   {
-    filename: "Adventure_Details.pdf", // Name of the file in the email
+    filename: "PPAR - sm The HighestRide 10D - EN - 2024-2025.pdf", // Name of the file in the email
     path: "Files/PPAR - sm The HighestRide 10D - EN - 2024-2025.pdf", // Path to the file
   },
 ],
@@ -197,7 +197,7 @@ YouTube: https://www.youtube.com/channel/UCOeEWtVilE8o1VIGfrDXKZA/`,
 
 attachments: [
   {
-    filename: "Adventure_Details.pdf", // Name of the file in the email
+    filename: "PPAR - sm RAJ ESS 10D  - ENG - 2024 - 2025.pdf", // Name of the file in the email
     path: "Files/PPAR - sm RAJ ESS 10D  - ENG - 2024 - 2025.pdf", // Path to the file
   },
 ],
@@ -253,7 +253,7 @@ YouTube: https://www.youtube.com/channel/UCOeEWtVilE8o1VIGfrDXKZA/`,
 
 attachments: [
   {
-    filename: "Adventure_Details.pdf", // Name of the file in the email
+    filename: "PPAR - sm RAJ ESS VIP10D  - ENG - 2024 - 2025.pdf", // Name of the file in the email
     path: "Files/PPAR - sm RAJ ESS VIP10D  - ENG - 2024 - 2025.pdf", // Path to the file
   },
 ],
@@ -314,7 +314,7 @@ YouTube: https://www.youtube.com/channel/UCOeEWtVilE8o1VIGfrDXKZA/`,
 
 attachments: [
   {
-    filename: "Adventure_Details.pdf", // Name of the file in the email
+    filename: "PPAR - smThe HighestRide 10 - FR - 2024-2025.pdf", // Name of the file in the email
     path: "Files/PPAR - smThe HighestRide 10 - FR - 2024-2025.pdf", // Path to the file
   },
 ],
@@ -377,7 +377,7 @@ YouTube: https://www.youtube.com/channel/UCOeEWtVilE8o1VIGfrDXKZA/`,
 
 attachments: [
   {
-    filename: "Adventure_Details.pdf", // Name of the file in the email
+    filename: "PPAR - sm RAJ ESS VIP10D  - FR - 2024 - 2025.pdf", // Name of the file in the email
     path: "Files/PPAR - sm RAJ ESS VIP10D  - FR - 2024 - 2025.pdf", // Path to the file
   },
 ],
