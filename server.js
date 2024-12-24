@@ -24,7 +24,7 @@ app.post("/send-email", (req, res) => {
   const { name, surname, email, mobile, city, currentBike } = req.body;
 
   const mailOptions = {
-    from: "adventurerides999@gmail.com", // Sender's email
+    from: "contact@adventurerides.travel", // Sender's email
     to: "deepanshushrivastav999@gmail.com", // Main recipient
     bcc: "contact@adventurerides.travel", // BCC
     subject: "Contact Us",
@@ -57,7 +57,7 @@ app.post("/send-download-email-him4days", (req, res) => {
   }
 
   const mailOptions = {
-    from: "adventurerides999@gmail.com",
+    from: "contact@adventurerides.travel",
     to: email,
     subject: "Adventure Rides",
     text: `Dear ${name},
@@ -114,7 +114,7 @@ app.post("/send-download-email-him10days", (req, res) => {
   }
 
   const mailOptions = {
-    from: "adventurerides999@gmail.com",
+    from: "contact@adventurerides.travel",
     to: email,
     subject: "Adventure Rides",
     text: `Dear ${name},
@@ -171,7 +171,7 @@ app.post("/send-download-email-raj10days", (req, res) => {
   }
 
   const mailOptions = {
-    from: "adventurerides999@gmail.com",
+    from: "contact@adventurerides.travel",
     to: email,
     subject: "Adventure Rides",
     text: `Dear ${name},
@@ -227,7 +227,7 @@ app.post("/send-download-email-raj10daysvip", (req, res) => {
   }
 
   const mailOptions = {
-    from: "adventurerides999@gmail.com",
+    from: "contact@adventurerides.travel",
     to: email,
     subject: "Adventure Rides",
     text: `Dear ${name},
@@ -281,7 +281,7 @@ app.post("/send-download-email-him10daysfr", (req, res) => {
   }
 
   const mailOptions = {
-    from: "adventurerides999@gmail.com",
+    from: "contact@adventurerides.travel",
     to: email,
     subject: "Adventure Rides",
     text: `Cher ${name},
@@ -344,7 +344,7 @@ app.post("/send-download-email-raj10daysvipfr", (req, res) => {
   }
 
   const mailOptions = {
-    from: "adventurerides999@gmail.com",
+    from: "contact@adventurerides.travel",
     to: email,
     subject: "Adventure Rides",
     text: `Cher ${name},
