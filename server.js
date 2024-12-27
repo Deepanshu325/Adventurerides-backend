@@ -21,7 +21,7 @@ const transporter = nodemailer.createTransport({
 
 // API Endpoint for sending contact emails
 app.post("/send-email", (req, res) => {
-  const { name, surname, email, mobile, city, currentBike } = req.body;
+  const { name, surname, email, mobile, city, currentBike ,comments } = req.body;
 
   const mailOptions = {
     from: "contact@adventurerides.travel", // Sender's email
@@ -33,7 +33,8 @@ Surname: ${surname}
 Email: ${email}
 Mobile: ${mobile}
 Country: ${city}
-Current Bike(s): ${currentBike}`,
+Current Bike(s): ${currentBike} 
+Comments: ${comments}`,
   };
 
   transporter.sendMail(mailOptions, (error, info) => {
