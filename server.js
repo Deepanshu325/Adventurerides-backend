@@ -34,7 +34,7 @@ Email: ${email}
 Mobile: ${mobile}
 Country: ${city}
 Current Bike(s): ${currentBike} 
-Comments: ${comments}`,
+Message: ${comments}`,
   };
 
   transporter.sendMail(mailOptions, (error, info) => {
