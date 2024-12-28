@@ -25,7 +25,7 @@ app.post("/send-email", (req, res) => {
 
   const mailOptions = {
     from: "contact@adventurerides.travel", // Sender's email
-    to: "deepanshushrivastav999@gmail.com", // Main recipient
+    to: "contact@adventurerides.travel", // Main recipient
     bcc: "contact@adventurerides.travel", // BCC
     subject: "Contact Us",
     text: `Name: ${name}
