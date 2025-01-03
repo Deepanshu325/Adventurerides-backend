@@ -66,7 +66,7 @@ app.post("/send-download-email-him4days", (req, res) => {
 
 From the very start of the booking process, we at Adventure Rides, do everything we can at our end to make sure that each and every adventurer has all the information and support they need to get to the start of the ride fully prepared and stress-free.
 
-Here is the detailed program of your next adventure including a daily wise description of your discoveries and all in-
+Here is the detailed program of your next adventure Himalaya 4 Days including a daily wise description of your discoveries and all in-
 /exclusions.
 
 Don’t be afraid to ask us any questions. If you want to pick our brains over the phone, leave us a contact number, and one of the adventure leaders will get back to you as soon as we can.
@@ -124,7 +124,7 @@ app.post("/send-download-email-him10days", (req, res) => {
 
 From the very start of the booking process, we at Adventure Rides, do everything we can at our end to make sure that each and every adventurer has all the information and support they need to get to the start of the ride fully prepared and stress-free.
 
-Here is the detailed program of your next adventure including a daily wise description of your discoveries and all in-
+Here is the detailed program of your next adventure Himalaya 10 Days including a daily wise description of your discoveries and all in-
 /exclusions.
 
 Don’t be afraid to ask us any questions. If you want to pick our brains over the phone, leave us a contact number, and one of the adventure leaders will get back to you as soon as we can.
@@ -241,7 +241,7 @@ app.post("/send-download-email-raj10days", (req, res) => {
 
 From the very start of the booking process, we at Adventure Rides, do everything we can at our end to make sure that each and every adventurer has all the information and support they need to get to the start of the ride fully prepared and stress-free.
 
-Here is the detailed program of your next adventure including a daily wise description of your discoveries and all in-
+Here is the detailed program of your next adventure RAJ ESS 10D  including a daily wise description of your discoveries and all in-
 /exclusions.
 
 Don’t be afraid to ask us any questions. If you want to pick our brains over the phone, leave us a contact number, and one of the adventure leaders will get back to you as soon as we can.
@@ -256,7 +256,7 @@ Phone / WhatsApp: +91 96675 74757
 Skype: phigel
 Instagram: https://www.instagram.com/adventurerides.travel/
 Facebook: https://www.facebook.com/people/Adventure-Rides/100064155602022/
-YouTube: https://www.youtube.com/channel/UCOeEWtVilE8o1VIGfrDXKZA/`,
+YouTube: https://www.youtube.com/channel/UCOeEWtVilE8o1VIGfrDXKZA/` ,
 
 attachments: [
   {
@@ -298,7 +298,7 @@ app.post("/send-download-email-raj10daysvip", (req, res) => {
 
 From the very start of the booking process, we at Adventure Rides, do everything we can at our end to make sure that each and every adventurer has all the information and support they need to get to the start of the ride fully prepared and stress-free.
 
-Here is the detailed program of your next adventure including a daily wise description of your discoveries and all in-
+Here is the detailed program of your next adventure RAJ ESS VIP10D including a daily wise description of your discoveries and all in-
 /exclusions.
 
 Don’t be afraid to ask us any questions. If you want to pick our brains over the phone, leave us a contact number, and one of the adventure leaders will get back to you as soon as we can.
