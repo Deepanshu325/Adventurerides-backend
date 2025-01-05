@@ -60,7 +60,6 @@ app.post("/send-download-email-him4days", (req, res) => {
   const mailOptions = {
     from: "contact@adventurerides.travel",
     to: email,
-    bcc: "contact@adventurerides.travel",
     subject: "Adventure Rides",
     text: `Dear ${name},
 
@@ -118,7 +117,6 @@ app.post("/send-download-email-him10days", (req, res) => {
   const mailOptions = {
     from: "contact@adventurerides.travel",
     to: email,
-    bcc: "contact@adventurerides.travel",
     subject: "Adventure Rides",
     text: `Dear ${name},
 
@@ -174,7 +172,6 @@ app.post("/send-download-email-raj10daysfr", (req, res) => {
   const mailOptions = {
     from: "contact@adventurerides.travel",
     to: email,
-    bcc: "contact@adventurerides.travel",
     subject: "Adventure Rides",
     text: `Cher ${name},
 
@@ -235,7 +232,6 @@ app.post("/send-download-email-raj10days", (req, res) => {
   const mailOptions = {
     from: "contact@adventurerides.travel",
     to: email,
-    bcc: "contact@adventurerides.travel",
     subject: "Adventure Rides",
     text: `Dear ${name},
 
@@ -292,7 +288,6 @@ app.post("/send-download-email-raj10daysvip", (req, res) => {
   const mailOptions = {
     from: "contact@adventurerides.travel",
     to: email,
-    bcc: "contact@adventurerides.travel",
     subject: "Adventure Rides",
     text: `Dear ${name},
 
@@ -347,7 +342,6 @@ app.post("/send-download-email-him10daysfr", (req, res) => {
   const mailOptions = {
     from: "contact@adventurerides.travel",
     to: email,
-    bcc: "contact@adventurerides.travel",
     subject: "Adventure Rides",
     text: `Cher ${name},
 
@@ -411,7 +405,6 @@ app.post("/send-download-email-raj10daysvipfr", (req, res) => {
   const mailOptions = {
     from: "contact@adventurerides.travel",
     to: email,
-    bcc: "contact@adventurerides.travel",
     subject: "Adventure Rides",
     text: `Cher ${name},
 
