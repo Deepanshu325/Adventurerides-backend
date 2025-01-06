@@ -34,7 +34,7 @@ Email: ${email}
 Mobile: ${mobile}
 Country: ${city}
 Current Bike(s): ${currentBike} 
-Message: ${comments}`,
+Message: ${comments}`
   };
 
   transporter.sendMail(mailOptions, (error, info) => {
@@ -47,6 +47,50 @@ Message: ${comments}`,
     }
   });
 });
+
+
+
+
+
+
+
+
+
+// API Endpoint for sending contact emails
+app.post("/send-email-program", (req, res) => {
+  const { name, surname, email, mobile, city, currentBike, program} = req.body;
+
+  if (!name || !surname || !email || !mobile || !city || !currentBike || !program) {
+    return res.status(400).json({ error: "All fields, including filename, are required." });
+  }
+
+
+  const mailOptions = {
+    from: "contact@adventurerides.travel", // Sender's email
+    to: "cseshivangi599@gmail.com", // Main recipient
+    bcc: "contact@adventurerides.travel", // BCC
+    subject: "Contact Us",
+    text: `Name: ${name}
+Surname: ${surname}
+Email: ${email}
+Mobile: ${mobile}
+Country: ${city}
+Current Bike(s): ${currentBike} 
+Filename: ${program} `, 
+  };
+
+
+  transporter.sendMail(mailOptions, (error, info) => {
+    if (error) {
+      console.error("Error sending email:", error.message);
+      res.status(500).json({ error: "Email failed to send." });
+    } else {
+      console.log("Email sent:", info.response);
+      res.status(200).json({ message: "Email sent successfully." });
+    }
+  });
+});
+
 
 // New API Endpoint for sending a download message for Himalaya 4 days
 // New API Endpoint for sending a download message for Himalaya 10 days
