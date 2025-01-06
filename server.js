@@ -60,7 +60,7 @@ Message: ${comments}`
 app.post("/send-email-program", (req, res) => {
   const { name, surname, email, mobile, city, currentBike, program} = req.body;
 
-  if (!name || !surname || !email || !mobile || !city || !currentBike || !program) {
+  if (!name || !surname || !email || !mobile || !city || !currentBike) {
     return res.status(400).json({ error: "All fields, including filename, are required." });
   }
 
